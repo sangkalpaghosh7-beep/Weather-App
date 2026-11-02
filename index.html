@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather App</title>
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="weather-app">
+    <div id="input">
+        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+        <input
+            id="weather-inp"
+            type="text"
+            placeholder="Search for a city..."
+            autocomplete="off"
+        >
+        <button id="search-inp">Search</button>
+    </div>
+    <div id="cityName">Siliguri</div>
+    <img id="img" src="" alt="Weather icon">
+    <div id="temp"></div>
+    <div id="weatherType">Partly Cloudy</div>
+    <div id="tempDesc">
+        <div>
+            <i class="fa-solid fa-droplet"></i>
+            <p>Humidity</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-wind"></i>
+            <p>Wind Speed</p>
+        </div>
+        <div>
+            <i class="fa-regular fa-clock"></i>
+            <p>Pressure</p>
+        </div>
+    </div>
+    <div id="tempValues">
+        <p class="hum">62%</p>
+        <p class="wind">12 km/h</p>
+        <p class="press">1015 hPa</p>
+    </div>
+    <div id="date-time">
+        <p id="date"></p>
+        <p id="time"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
